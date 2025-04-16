@@ -41,7 +41,7 @@ letsMovie.displayInfo()
 letsMovie.updateRating("1")
 letsMovie.displayInfo()
 
-let movies = [""];
+let movies = [];
 movies.push(letsMovie[1])
 console.log(movies)
 
