@@ -38,14 +38,12 @@ class Movie {
 
 let letsMovie = new Movie("minecraft", ["steve", "alex"], "my description", "100");
 letsMovie.displayInfo()
-letsMovie.updateRating("1")
-letsMovie.displayInfo()
 
 let movies = [];
-movies.push(letsMovie[1])
+movies.push(letsMovie)
 console.log(movies)
-
-updateMovieRating("minecraft", 5)
+updateMovieRating(movies[0], 5)
 function updateMovieRating(title, newRating) {
   title.updateRating(newRating)
 }
+letsMovie.displayInfo()
