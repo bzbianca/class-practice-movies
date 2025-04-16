@@ -32,7 +32,7 @@ class Movie {
     this.#rating = newRating
   }
   displayInfo() {
-    movieinfo.innerHTML = `Title: ${this.#title}<br>Cast: ${this.#cast}<br>Description: ${this.#description}<br>Rating: ${this.#rating}`
+    movieinfo.innerHTML += `Title: ${this.#title}<br>Cast: ${this.#cast}<br>Description: ${this.#description}<br>Rating: ${this.#rating}`
   }
 }
 
@@ -46,4 +46,5 @@ updateMovieRating(movies[0], 5)
 function updateMovieRating(title, newRating) {
   title.updateRating(newRating)
 }
+movieinfo.innerHTML += "<br><br>"
 letsMovie.displayInfo()
